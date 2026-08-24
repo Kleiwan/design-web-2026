@@ -1,4 +1,4 @@
-# Repositório da turma de Desing Web 2026
+# Repositório da turma de Design Web 2026
 
 
 ## 4ª Semana
