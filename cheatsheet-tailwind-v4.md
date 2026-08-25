@@ -61,6 +61,7 @@
 ## 4. Cores (Background, Texto, Bordas)
 
 ### 4.1 Cores de fundo (`bg-`)
+> [Link com as cores e como são usadas no tailwind](https://tailwindcss.com/docs/colors)
 
 | Classe                                            | Descrição                          |
 | ------------------------------------------------- | ---------------------------------- |
