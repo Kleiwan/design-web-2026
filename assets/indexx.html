@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prática Tailwind - Notícias</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-green-800 mb-8">
+      Notícias
+    </h1>
+
+    <div class="grid 1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img
+          class="w-full h-48 object-cover"
+          src="img/istockphoto-1344709643-1024x1024.jpg"
+          alt="Participantes de evento esportivo"
+        >
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800">
+            Esportes
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Intercapi inicia fase final de estadual
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Cerca de 1200 participantes disputam onze modalidades até sábado (29). A programação também inclui o Festival Paralímpico.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 12 horas
+          </p>
+
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img
+          class="w-full h-48 object-cover"
+          src="img/istockphoto-1344709643-1024x1024.jpg"
+          alt="Pesquisa acadêmica"
+        >
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800">
+            Pesquisa
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN amplia projetos de pesquisa e inovação
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Novos projetos desenvolvidos por estudantes e professores buscam soluções inovadoras para desafios da sociedade.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 1 dia
+          </p>
+
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+
+        <img
+          class="w-full h-48 object-cover"
+          src="img/istockphoto-1344709643-1024x1024.jpg"
+          alt="Estudantes em intercâmbio"
+        >
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <span class="inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-800">
+            Internacionalização
+          </span>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Estudantes participam de programa de intercâmbio
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Programa promove experiências acadêmicas internacionais e amplia as oportunidades de formação dos estudantes.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 2 dias
+          </p>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</body>
+</html>
