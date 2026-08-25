@@ -1,4 +1,4 @@
-# 🎨 Cheatsheet Tailwind CSS v4 – Semana 4
+# Cheatsheet Tailwind CSS v4 – Semana 4
 
 
 ## Como usar
