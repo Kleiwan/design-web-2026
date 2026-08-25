@@ -98,7 +98,7 @@ Você deve baixar uma imagem **do PixaBay** (ou outro banco de imagens livre) qu
 
 
 
-### Tarefa 2 – Página de listagem de notícias
+### Tarefa 2 – Seção de listagem de notícias
 
 A partir do card individual criado na Tarefa 1, construir uma **página completa de listagem de notícias**, com múltiplos cards organizados em um **grid responsivo**, seguindo o estilo da imagem de referência fornecida (título "Notícias" e vários cards com categoria, título, descrição, data).
 
