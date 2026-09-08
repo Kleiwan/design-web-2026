@@ -18,30 +18,29 @@
     <footer id="footer">
 
         <!-- Botão "Voltar ao topo" -->
-        <div id="go-to-top">
+        <div id="go-to-top" class="flex justify-center py-4 bg-green-900">
             <div>
-                <button type="button">Voltar ao topo</button>
+                <button type="button" class="text-white hover:text-green-300 transition-colors duration-200 font-medium text-sm">Voltar ao topo</button>
             </div>
         </div>
 
         <!-- Mapa do site (sitemap) -->
-        <div id="sitemap">
-            <ul>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 bg-green-800">
                 <!-- Processos seletivos -->
                 <li>
                     <a href="/processos-seletivos/buscar/" aria-haspopup="true">
                         Processos seletivos
                     </a>
                     <ul aria-label="submenu">
-                        <li><a href="/processos-seletivos/buscar/?tipo=1">Bolsas para estudantes</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=2">Empreenda no IFRN</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=3">Estude no IFRN</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=4">Gestão IFRN</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=5">Internacionalização</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=6">Monitoria e Tutoria</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=9">Pesquise no IFRN</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=7">Servidores</a></li>
-                        <li><a href="/processos-seletivos/buscar/?tipo=8">Trabalhe no IFRN</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=1" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Bolsas para estudantes</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=2" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Empreenda no IFRN</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=3" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Estude no IFRN</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=4" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Gestão IFRN</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=5" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Internacionalização</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=6" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Monitoria e Tutoria</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=9" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Pesquise no IFRN</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=7" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Servidores</a></li>
+                        <li class="mb-4"><a href="/processos-seletivos/buscar/?tipo=8" class="no-underline text-white hover:text-green-300 transition-colors duration-200 font-semibold text-base">Trabalhe no IFRN</a></li>
                     </ul>
                 </li>
 
@@ -51,10 +50,10 @@
                         Cursos
                     </a>
                     <ul aria-label="submenu">
-                        <li><a href="/cursos/buscar/?categoria=cursos-de-pos-graduacao">Cursos de Pós-Graduação</a></li>
-                        <li><a href="/cursos/buscar/?categoria=cursos-superiores">Cursos Superiores</a></li>
-                        <li><a href="/cursos/buscar/?categoria=cursos-tecnicos">Cursos Técnicos</a></li>
-                        <li><a href="/cursos/buscar/?categoria=outros-cursos">Outros Cursos</a></li>
+                        <li><a class="no-underline text-gray-300 hover:text-white transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-de-pos-graduacao">Cursos de Pós-Graduação</a></li>
+                        <li><a class="no-underline text-gray-300 hover:text-white transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-superiores">Cursos Superiores</a></li>
+                        <li><a class="no-underline text-gray-300 hover:text-white transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-tecnicos">Cursos Técnicos</a></li>
+                        <li><a class="no-underline text-gray-300 hover:text-white transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=outros-cursos">Outros Cursos</a></li>
                     </ul>
                 </li>
 
@@ -169,61 +168,62 @@
         </div>
 
         <!-- Banners (links com imagens) -->
-        <div>
+        <div id="sitemap" class="bg-green-900 py-4">
+            <div >
             <div>
-                <ul>
-                    <li>
-                        <a href="https://memoria.ifrn.edu.br/">
-                            <img alt="Banner - Memoria" height="42" src="/assets/img/icon_memoria_ifrn.original.png"
+                <ul class="flex flex-wrap justify-center items-center gap-4 px-4">
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="https://memoria.ifrn.edu.br/">
+                            <img class="h-8 w-auto object-contain" alt="Banner - Memoria" height="42" src="assets/img/icon_memoria_ifrn.original.png"
                                 width="68" />
                             <span>Memoria</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://siabi.ifrn.edu.br/">
-                            <img alt="Banner - Sistema de Bibliotecas" height="92"
-                                src="/assets/img/Banner_-_Sistema_de_Bibliotecas.original.png" width="75" />
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="https://siabi.ifrn.edu.br/">
+                            <img class="h-8 w-auto object-contain" alt="Banner - Sistema de Bibliotecas" height="92"
+                                src="assets/img/Banner_-_Sistema_de_Bibliotecas.original.png" width="75" />
                             <span>Sistema de Bibliotecas do IFRN</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/licitacoes/">
-                            <img alt="Banner - Licitações" height="70" src="/assets/img/licitaC3A7C3B5es.original.png"
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/licitacoes/">
+                            <img class="h-8 w-auto object-contain" alt="Banner - Licitações" height="70" src="assets/img/licitaC3A7C3B5es.original.png"
                                 width="50" />
                             <span>Licitações</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://portal.ifrn.edu.br/institucional/governanca/ouvidoria/">
-                            <img alt="Banner - Ouvidoria" height="70" src="/assets/img/ouvidoria.original.png"
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="http://portal.ifrn.edu.br/institucional/governanca/ouvidoria/">
+                            <img class="h-8 w-auto object-contain" alt="Banner - Ouvidoria" height="70" src="assets/img/ouvidoria.original.png"
                                 width="82" />
                             <span>Ouvidoria</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/processos-eletronicos/">
-                            <img alt="Banner - Processos eletrônicos" height="70"
-                                src="/assets/img/processos_eletronicos.original.png" width="102" />
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/processos-eletronicos/">
+                            <img class="h-8 w-auto object-contain" alt="Banner - Processos eletrônicos" height="70"
+                                src="assets/img/processos_eletronicos.original.png" width="102" />
                             <span>Processos eletrônicos</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao/">
-                            <img alt="Banner para Serviço de Informação ao Cidadão" height="70"
-                                src="/assets/img/sic.original.png" width="70" />
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao/">
+                            <img class="h-8 w-auto object-contain" alt="Banner para Serviço de Informação ao Cidadão" height="70"
+                                src="assets/img/sic.original.png" width="70" />
                             <span>Serviço de Informação ao Cidadão</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/transparencia-e-prestacao-de-contas/">
-                            <img alt="Banner para transparência e prestação de contas" height="69"
-                                src="/assets/img/transparencia_e_prestaC3A7C3A3o.original.png" width="57" />
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/transparencia-e-prestacao-de-contas/">
+                            <img class="h-8 w-auto object-contain" alt="Banner para transparência e prestação de contas" height="69"
+                                src="assets/img/transparencia_e_prestaC3A7C3A3o.original.png" width="57" />
                             <span>Transparência e prestação de contas</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://falabr.cgu.gov.br/web/home">
-                            <img alt="Banner do Fala.BR" height="225" src="/assets/img/FalaBR.original.png"
+                    <li class="flex items-center gap-2 text-white text-sm">
+                        <a class="flex items-center gap-2 hover:text-green-300 transition-colors duration-200" href="https://falabr.cgu.gov.br/web/home">
+                            <img class="h-8 w-auto object-contain" alt="Banner do Fala.BR" height="225" src="assets/img/FalaBR.original.png"
                                 width="225" />
                             <span>Fala.BR</span>
                         </a>
@@ -233,47 +233,48 @@
         </div>
 
         <!-- Informações institucionais (endereço, contato, redes sociais, e-MEC) -->
-        <div>
+        <div class="bg-green-800 text-white py-8 px-4">
             <div>
-                <div>
-                    <div>
-                        <h2
-                            title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8">
+                    <div class="md:w-1/4">
+                        <h2 
+                            title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte"
+                            class="text-xl font-bold leading-tight">
                             Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</h2>
                     </div>
-                    <div>
-                        <h3>Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</h3>
-                        <dl>
-                            <dt>Endereço:</dt>
+                    <div class="md:w-2/4 text-sm">
+                        <h3 class="font-semibold text-lg">Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</h3>
+                        <dl class="mt-2 space-y-1">
+                            <dt class="sr-only">Endereço:</dt>
                             <dd>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</dd>
-                            <dt>CEP:</dt>
+                            <dt class="sr-only">CEP:</dt>
                             <dd>59015-300</dd>
-                            <dt>E-mail:</dt>
+                            <dt class="sr-only">E-mail:</dt>
                             <dd>comunicacao@ifrn.edu.br</dd>
-                            <dt>Telefone:</dt>
+                            <dt class="sr-only">Telefone:</dt>
                             <dd>(84) 4005-0890</dd>
                         </dl>
-                        <ul>
-                            <li><a href="https://www.instagram.com/ifrnoficial/" title="Instagram"><i
+                        <ul class="flex gap-3 mt-4 text-2xl">
+                            <li><a href="https://www.instagram.com/ifrnoficial/" title="Instagram" class="hover:text-green-300 transition-colors"><i
                                         class="ph ph-instagram-logo"></i><span>Instagram</span></a></li>
-                            <li><a href="https://twitter.com/ifrnoficial_" title="Twitter/X"><i
+                            <li><a href="https://twitter.com/ifrnoficial_" title="Twitter/X" class="hover:text-green-300 transition-colors"><i
                                         class="ph ph-twitter-logo"></i><span>Twitter/X</span></a></li>
-                            <li><a href="https://br.linkedin.com/school/ifrn/" title="Linkedin"><i
+                            <li><a href="https://br.linkedin.com/school/ifrn/" title="Linkedin" class="hover:text-green-300 transition-colors"><i
                                         class="ph ph-linkedin-logo"></i><span>Linkedin</span></a></li>
-                            <li><a href="https://www.youtube.com/ifrnoficial" title="Youtube"><i
+                            <li><a href="https://www.youtube.com/ifrnoficial" title="Youtube" class="hover:text-green-300 transition-colors"><i
                                         class="ph ph-youtube-logo"></i><span>Youtube</span></a></li>
                             <li><a href="https://open.spotify.com/show/2dOEWD8AjVqszkAXWHxWwf?si=jgLOqL1-TwW8QEgQYaWpDA"
-                                    title="Spotify"><i class="ph ph-spotify-logo"></i><span>Spotify</span></a></li>
+                                    title="Spotify" class="hover:text-green-300 transition-colors"><i class="ph ph-spotify-logo"></i><span>Spotify</span></a></li>
                             <li><a href="https://www.tiktok.com/@ifrnoficial?_r=1&amp;_t=ZS-97QQhb8X6QC"
-                                    title="TikTok"><i class="ph ph-tiktok-logo"></i><span>TikTok</span></a></li>
+                                    title="TikTok" class="hover:text-green-300 transition-colors"><i class="ph ph-tiktok-logo"></i><span>TikTok</span></a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="md:w-1/4 flex flex-col items-center text-center">
                         <a
-                            href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==">
-                            <span>e-MEC</span>
-                            <span>Consulte o cadastro da instituição no Sistema do e-MEC</span>
-                            <img src="/assets/img/e-mec-qr-code.png"
+                            href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==" class="flex flex-col items-center hover:text-green-300 transition-colors">
+                            <span class="font-bold text-xl">e-MEC</span>
+                            <span class="text-xs">Consulte o cadastro da instituição no Sistema do e-MEC</span>
+                            <img class="mt-2 w-24 h-auto" src="assets/img/e-mec-qr-code.png"
                                 alt="QR-Code para consulta do cadastro da instituição no Sistema do e-MEC" height="95"
                                 width="95" />
                         </a>
@@ -287,7 +288,7 @@
         Esater egg -> https://cesimarxavier.com.br/design-web/easter-egg/resolucao-tarefa9.md
          
         -->
-        <div>
+        <div >
             <p>Copyright © 2026 | Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte
             </p>
         </div>
