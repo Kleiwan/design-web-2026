@@ -2,626 +2,1540 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Atividade 10 – Seção de Eventos</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css">
 </head>
 
-<<<<<<< HEAD
-<body class="bg-gray-100 min-h-screen flex items-center justify-between">
+<body class="bg-gray-100 min-h-screen">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <header class="max-w-7xl mx-auto px-6 flex-wrap flex-grow">
-        <div>
-            <!-- Cabeçalho da seção -->
-            <div>
-                <h1 class="text-2xl font-bold text-green-900 no-underline">
-                    <a href=""
-                        title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
-                        INSTITUTO FEDERAL
+    <!-- ==================== CABEÇALHO ==================== -->
+
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+
+            <div class="flex flex-wrap items-center justify-between gap-6">
+
+                <!-- Identidade -->
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900">
+                        <a href=""
+                            title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
+                            INSTITUTO FEDERAL
+                        </a>
+                    </h1>
+
+                    <p class="hidden md:block text-sm text-gray-600">
+                        Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <nav class="hidden md:flex flex-wrap items-center gap-4 text-sm" aria-label="Navegação principal">
+
+                    <a class="hover:text-green-700 transition"
+                        href="https://portal.ifrn.edu.br/processos-seletivos/buscar/">
+                        Processos seletivos
                     </a>
-                </h1>
-                <p class="hidden md:block slogan">
-                    Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
-                </p>
-=======
-    <!-- restante do código deverá ficar pora aqui -->
 
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/cursos/buscar/">
+                        Cursos
+                    </a>
 
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/campus/">
+                        Campi
+                    </a>
 
-    <footer id="footer">
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/institucional/">
+                        Institucional
+                    </a>
 
-        <!-- Botão "Voltar ao topo" -->
-        <div id="go-to-top" class="flex justify-center py-4 bg-green-800 text-white">
-            <div>
-                <button type="button" class="text-white hover:text-green-300 transition-colors duration-200 font-medium text-sm">Voltar ao topo</button>
->>>>>>> origin/Atividade-9
-            </div>
-                
-                <!-- NAVEGAÇÃO PRINCIPAL (desktop) -->
-                <nav class="hidden md:flex flex-wrap items-center gap-3 hover:text-green-500" aria-label="Navegação principal">
-                    <a href="https://portal.ifrn.edu.br/processos-seletivos/buscar/">Processos seletivos</a>
-                    <a href="https://portal.ifrn.edu.br/cursos/buscar/">Cursos</a>
-                    <a href="https://portal.ifrn.edu.br/campus/">Campi</a>
-                    <a href="https://portal.ifrn.edu.br/institucional/">Institucional</a>
-                    <a href="https://portal.ifrn.edu.br/acesso-a-informacao/">Acesso à Informação</a>
-                    <a href="https://portal.ifrn.edu.br/eventos/">Eventos</a>
-                    <a href="https://portal.ifrn.edu.br/servicos/">Serviços</a>
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/acesso-a-informacao/">
+                        Acesso à Informação
+                    </a>
+
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/eventos/">
+                        Eventos
+                    </a>
+
+                    <a class="hover:text-green-700 transition" href="https://portal.ifrn.edu.br/servicos/">
+                        Serviços
+                    </a>
                 </nav>
+
+                <!-- Menu mobile -->
+                <button class="text-green-700 md:hidden text-2xl" id="menuToggle" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+
             </div>
-            <!-- MENU HAMBÚRGUER (mobile) -->
-            <button class="text-rose-600 md:hidden" id="menuToggle" aria-label="Menu">
-                <i class="ph ph-list">menuToggle</i>
-            </button>
-                
-                
-            
-            <!-- AÇÕES (ícones, busca, contraste, modo escuro) -->
-            <div>
-                <!-- Ícones sociais -->
-                <ul class=" items-center gap-3">
-                    <div class="text-green-500">
-                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
-                        <a href="#" aria-label="Spotify"><i class="ph ph-spotify-logo"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
-=======
-    <!-- ===========  Eventos  ================= -->
+
+            <!-- Ações -->
+            <div class="flex flex-wrap items-center gap-4 mt-5">
+
+                <!-- Redes sociais -->
+                <div class="flex items-center gap-3 text-green-700 text-lg">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="ph ph-instagram-logo"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="ph ph-twitter-logo"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="ph ph-youtube-logo"></i>
+                    </a>
+
+                    <a href="#" aria-label="Spotify">
+                        <i class="ph ph-spotify-logo"></i>
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        <i class="ph ph-tiktok-logo"></i>
+                    </a>
+
+                </div>
+
+                <!-- Busca -->
+                <form method="get" action="/search/" class="flex items-center">
+
+                    <input
+                        class="border border-gray-300 rounded-full px-3 py-1 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-600"
+                        type="search" name="query" placeholder="Busca" aria-label="Busca">
+
+                    <button type="submit" aria-label="Pesquisar" class="ml-2 text-green-700">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+
+                </form>
+
+                <!-- Alto contraste -->
+                <button id="altocontraste" type="button" aria-label="Alto contraste" class="text-green-700">
+                    <i class="ph ph-contrast"></i>
+                </button>
+
+                <!-- Modo escuro -->
+                <button type="button" aria-label="Modo escuro" class="text-green-700">
+                    <i class="ph ph-moon"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ==================== NOTÍCIAS ==================== -->
+
+    <section class="max-w-7xl mx-auto px-4 py-10">
+
+        <header class="py-4">
+            <h2 class="text-3xl font-bold text-green-900 mb-8">
+                Notícias
+            </h2>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Notícia 1 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/reuniao/400/200"
+                    alt="Reunião">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Reunião
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-31T10:00">
+                        Há 1 hora, 3 minutos
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Gestão e representação sindical dialogam sobre demandas dos servidores
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Encontros realizados em agosto abordaram temas relacionados ao PGD,
+                    prioridades legais, readaptação e banco de horas.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 2 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/cultura/400/200"
+                    alt="Arte e Cultura">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Arte e Cultura
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-27T14:00">
+                        Há 4 dias
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Intercâmbio entre museus de brinquedos populares tem programação gratuita em Natal
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Atividades acontecem nesta sexta-feira (28) e sábado (29),
+                    no Centro de Tecnologia e Cultura do IFRN.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 3 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/intercampi/400/200"
+                    alt="Jogos Intercampi">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Jogos Intercampi Estudantis 2026
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-31T09:00">
+                        Há 1 hora, 45 minutos
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Intercampi chega ao fim com definição das últimas medalhas
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Resultados de sexta-feira e sábado encerraram a fase final estadual.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 4 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/alinhamento/400/200"
+                    alt="Alinhamento">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Alinhamento
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-27T15:00">
+                        Há 4 dias, 1 hora
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Comissão de docentes realiza encontro presencial com capacitação
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Programação reúne integrantes para discutir o regimento interno
+                    e aprofundar conhecimentos sobre processos relacionados à carreira docente.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 5 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/campus/400/200"
+                    alt="Campus Santa Cruz">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Campus Santa Cruz
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-30T08:00">
+                        Há 20 horas
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    IFRN sediou eventos sobre acessibilidade e inclusão na educação
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Programação ocorreu entre os dias 26 e 28 de agosto,
+                    no Campus Santa Cruz.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 6 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/judo/400/200"
+                    alt="Judô">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Intercampi 2026
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-27T16:00">
+                        Há 4 dias, 16 horas
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Judô estreia e futebol define classificados nos Jogos Intercampi
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Quinta-feira reúne estreia da modalidade e rodadas que encaminham
+                    as semifinais da fase final.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 7 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/evento/400/200"
+                    alt="Evento">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Evento
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-28T10:00">
+                        Há 3 dias, 22 horas
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    III Encontro de Assessores de Projetos de Ensino reúne representantes dos 22 Campi na Reitoria
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    O evento promoveu formação, troca de experiências e discussões
+                    sobre a regulamentação e o acompanhamento dos Projetos de Ensino no Instituto.
+                </p>
+
+            </article>
+
+
+            <!-- Notícia 8 -->
+            <article class="overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+
+                <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/jee/400/200"
+                    alt="JEE 2026">
+
+                <header class="mt-4">
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        JEE 2026
+                    </span>
+
+                    <time class="text-gray-500 text-xs ml-2" datetime="2026-08-26T18:00">
+                        Há 5 dias, 12 horas
+                    </time>
+                </header>
+
+                <h3 class="text-xl font-bold text-green-800 mt-2">
+                    Novas modalidades ampliam programação dos Jogos Intercampi nesta quarta-feira
+                </h3>
+
+                <p class="text-gray-700 text-sm mt-2">
+                    Segundo dia da fase final teve provas individuais, disputas coletivas
+                    e continuidade das rodadas classificatórias.
+                </p>
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== EVENTOS ==================== -->
+
     <section class="bg-[#E8F2EC] py-16">
+
         <div class="max-w-7xl mx-auto px-4">
 
-            <!-- Cabeçalho da seção -->
+            <!-- Cabeçalho -->
             <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                <div>
+
+                <div class="max-w-3xl">
+
                     <h2 class="text-3xl md:text-4xl font-bold text-[#23472B]">
                         Eventos
                     </h2>
 
-                    <p class="mt-1 max-w-3xl text-[#3A3A3A] leading-relaxed">
-                        Conheça todos os eventos - atividades, festivais, congressos, palestras e outros -
-                        que englobam os <i>campi</i> do IFRN em diferentes escalas de alcance social.
+                    <p class="mt-1 text-[#3A3A3A] leading-relaxed text-justify">
+                        Conheça todos os eventos - atividades, festivais, congressos,
+                        palestras e outros - que englobam os <i>campi</i> do IFRN
+                        em diferentes escalas de alcance social.
                     </p>
+
                 </div>
 
                 <!-- Botão -->
                 <a href="/eventos/" class="inline-flex items-center gap-2 text-sm font-medium text-[#23472B]
-               border border-[#23472B] rounded-full px-4 py-2
-               hover:bg-[#23472B] hover:text-white
-               transition self-start md:self-auto shrink-0">
+                    border border-[#23472B] rounded-full px-4 py-2
+                    hover:bg-[#23472B] hover:text-white
+                    transition self-start md:self-auto shrink-0">
+
                     Todos os eventos
+
                     <i class="ph ph-caret-right"></i>
-                    <span aria-hidden="true"></span>
+
                 </a>
 
             </div>
 
-            <!-- Grade de cards de eventos -->
+
+            <!-- Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
 
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9486/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#23472B]">Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">Vivências em Arte</h3>
-                    <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">07</span>
-                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">dez</span>
-                            <span class="text-gray-500 font-normal">2026</span>
-                        </div>
->>>>>>> origin/Atividae-10
-                    </div>
-                    
-                <!-- Busca -->
-                <form method="get" action="/search/">
-                    <input class="border rounded-full px-3 py-1 bg-gray-100 focus:outline-none focus:ring" type="search" name="query" placeholder="Busca" aria-label="Busca" />
-                    <button type="submit" aria-label="Pesquisar">
-                        <i class="ph ph-magnifying-glass"></i>
-                    </button>
-                </form>
+                <!-- Evento 1 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9486/">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <!-- Alto contraste -->
-                <button id="altocontraste" type="button" aria-label="Alto contraste">
-                    <i class="ph ph-contrast"><img src="assets/img/circle-half.svg" alt=""></i>
-                </button>
+                    <span class="text-xs font-semibold text-[#23472B]">
+                        Em breve
+                    </span>
 
-                <!-- Modo escuro -->
-                <button type="button" aria-label="Modo escuro">
-                    <i class="ph ph-moon"><img src="assets/img/moon.svg" alt=""></i>
-                </button>
-            </div>
-=======
-        <!-- Mapa do site (sitemap) -->
-        <div id="sitemap">
-            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
-                <!-- Processos seletivos -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/processos-seletivos/buscar/" aria-haspopup="true" c>
-                        Processos seletivos
-                    </a>
-                    <ul aria-label="submenu">
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=1">Bolsas para estudantes</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=2">Empreenda no IFRN</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=3">Estude no IFRN</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=4">Gestão IFRN</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=5">Internacionalização</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=6">Monitoria e Tutoria</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=9">Pesquise no IFRN</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=7">Servidores</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/processos-seletivos/buscar/?tipo=8">Trabalhe no IFRN</a></li>
-                    </ul>
-                </li>
+                    <span>
+                        Pau dos Ferros
+                    </span>
 
-                <!-- Cursos -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/cursos/buscar/" aria-haspopup="true">
-                        Cursos
-                    </a>
-                    <ul aria-label="submenu">
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-de-pos-graduacao">Cursos de Pós-Graduação</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-superiores">Cursos Superiores</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=cursos-tecnicos">Cursos Técnicos</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/cursos/buscar/?categoria=outros-cursos">Outros Cursos</a></li>
-                    </ul>
-                </li>
-
-                <!-- Campi -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/campus/" aria-haspopup="true">
-                        Campi
-                    </a>
-                    <ul aria-label="submenu">
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/apodi/">Apodi</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/caico/">Caicó</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/canguaretama/">Canguaretama</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/ceara-mirim/">Ceará-Mirim</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/curraisnovos/">Currais Novos</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/ipanguacu/">Ipanguaçu</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/joaocamara/">João Câmara</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/jucurutu/">Jucurutu</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/lajes/">Lajes</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/macau/">Macau</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/mossoro/">Mossoró</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/natalcentral/">Natal-Central</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/natalcentrohistorico/">Natal-Centro Histórico</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/natal-zona-leste/">Natal-Zona Leste</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/natalzonanorte/">Natal-Zona Norte</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/novacruz/">Nova Cruz</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/parelhas/">Parelhas</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/parnamirim/">Parnamirim</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/paudosferros/">Pau dos Ferros</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/santacruz/">Santa Cruz</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/saogoncalo/">São Gonçalo do Amarante</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/sao-miguel/">São Miguel</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/sao-paulo-do-potengi/">São Paulo do Potengi</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/touros/">Touros</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/umarizal/">Umarizal</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/campus/reitoria/">Reitoria</a></li>
-                    </ul>
-                </li>
-
-                <!-- Institucional -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/institucional/" aria-haspopup="true">
-                        Institucional
-                    </a>
-                    <ul aria-label="submenu">
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/apresentacao/">Apresentação</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/administracao-e-infraestrutura/">Administração</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/comissoes-permanentes/">Comissões permanentes</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/comunicacao/">Comunicação Institucional</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/ensino/">Ensino</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/estudantes/">Estudantes</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/extensao/">Extensão</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/gabinete/">Gabinete</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/gestao-estrategica/">Gestão Estratégica</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/governanca/">Governança</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/pesquisa-pos-graduacao-e-inovacao/">Pesquisa, Pós-graduação e
-                                Inovação</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/servidores/">Servidores</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/tecnologia-da-informacao/">Tecnologia da Informação</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/internacionalizacao/">Internacionalização</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/infraestrutura/">Infraestrutura</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/institucional/polo-de-inovacao-currais-novos/">Polo de Inovação Currais Novos</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Acesso à Informação -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/acesso-a-informacao/" aria-haspopup="true">
-                        Acesso à Informação
-                    </a>
-                    <ul aria-label="submenu">
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/institucional/">Institucional</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/acoes-e-programas/">Ações e Programas</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/participacao-social/">Participação social</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/auditorias/">Auditorias</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/convenios-e-transferencias/">Convênios e Transferências</a>
-                        </li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/receitas-e-despesas/">Receitas e Despesas</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/licitacoes-e-contratos/">Licitações e Contratos</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/servidores/">Servidores</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/informacoes-classificadas/">Informações classificadas</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/servico-de-informacao-ao-cidadao/">Serviço de Informação ao
-                                Cidadão</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/perguntas-frequentes/">Perguntas Frequentes</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/portal-de-dados-abertos/">Dados Abertos</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/sancoes-administrativas/">Sanções administrativas</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/">Ferramentas e aspectos
-                                tecnológicos</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/boletins-de-servicos/">Boletins de Serviços</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/protecao-de-dados-pessoais/">Proteção de dados pessoais</a>
-                        </li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/estatutos-e-regimentos/">Documentos Institucionais</a></li>
-                        <li class="mb-4"><a class="no-underline hover:text-green-700 transition-colors duration-200 text-sm" href="/acesso-a-informacao/transparencia-e-prestacao-de-contas/">Transparência e
-                                Prestação de Contas</a></li>
-                    </ul>
-                </li>
-
-                <!-- Eventos -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/eventos/">Eventos</a>
-                </li>
-=======
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9595/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#23472B]">Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Caicó</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">III Feira Seridó Ciência</h3>
-                    <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">25</span>
-                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">nov</span>
-                            <span class="text-gray-500 font-normal">2026</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9783/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#23472B]">Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> João Câmara</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">CPOP 2026 - Competição de
-                        Pontes de Palito de Picolé do IFRN João Câmara</h3>
-                    <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">04</span>
-                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">nov</span>
-                            <span class="text-gray-500 font-normal">2026</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9333/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#23472B]">Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">III Encontro Anual da Comissão
-                        Própria de Avaliação</h3>
-                    <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">04</span>
-                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">nov</span>
-                            <span class="text-gray-500 font-normal">2026</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9739/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#58B06B]">Em
-                        andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">Oficina "Dando cores ao sol"
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        Vivências em Arte
                     </h3>
+
                     <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">14</span>
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            07
+                        </span>
+
                         <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">set</span>
-                            <span class="text-gray-500 font-normal">2026</span>
+                            <span>dez</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
                         </div>
+
                     </div>
+
                 </a>
 
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9764/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#58B06B]">Em
-                        andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> São Gonçalo do Amarante</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">IFJURIS: Introdução ao Direito
-                        Constitucional</h3>
+
+                <!-- Evento 2 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9595/">
+
+                    <span class="text-xs font-semibold text-[#23472B]">
+                        Em breve
+                    </span>
+
+                    <span>
+                        Caicó
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        III Feira Seridó Ciência
+                    </h3>
+
                     <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">14</span>
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            25
+                        </span>
+
                         <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">set</span>
-                            <span class="text-gray-500 font-normal">2026</span>
+                            <span>nov</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
                         </div>
+
                     </div>
+
                 </a>
 
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9714/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#58B06B]">Em
-                        andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">ASTEEAD Conecta: gestão,
-                        monitoramento e apoio à EaD no IFRN</h3>
+
+                <!-- Evento 3 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9783/">
+
+                    <span class="text-xs font-semibold text-[#23472B]">
+                        Em breve
+                    </span>
+
+                    <span>
+                        João Câmara
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara
+                    </h3>
+
                     <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">14</span>
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            04
+                        </span>
+
                         <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">set</span>
-                            <span class="text-gray-500 font-normal">2026</span>
+                            <span>nov</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
                         </div>
+
                     </div>
+
                 </a>
 
-                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3 hover:shadow-md hover:border-[#58B06B] transition-all duration-200"
-                    href="/eventos/9711/">
-                    <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#58B06B]">Em
-                        andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Currais Novos</span>
-                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">Produção e exposição de Sala
-                        Temática: Abelha e Mel.</h3>
+
+                <!-- Evento 4 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9333/">
+
+                    <span class="text-xs font-semibold text-[#23472B]">
+                        Em breve
+                    </span>
+
+                    <span>
+                        Reitoria
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        III Encontro Anual da Comissão Própria de Avaliação
+                    </h3>
+
                     <div class="flex items-end gap-2 mt-2">
-                        <span class="text-4xl font-bold text-[#23472B] leading-none">14</span>
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            04
+                        </span>
+
                         <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
-                            <span class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">set</span>
-                            <span class="text-gray-500 font-normal">2026</span>
+                            <span>nov</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
                         </div>
+
                     </div>
+
                 </a>
->>>>>>> origin/Atividae-10
-
-                <!-- Serviços -->
-                <li>
-                    <a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/servicos/">Serviços</a>
-                </li>
-
-                <!-- Acessibilidade e Créditos -->
-                <li><a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/acessibilidade">Acessibilidade</a></li>
-                <li><a class="no-underline hover:text-green-300 transition-colors duration-200 font-semibold text-base" href="/creditos">Créditos</a></li>
->>>>>>> origin/Atividade-9
-            </ul>
-        </div>
-=======
-<body class="max-w-7xl mx-auto">
-
-<<<<<<< HEAD
-    <section>
-        <header class="py-9">
-            <h2 class="text-3xl font-bold text-green-900 mb-8">Notícias</h2>
-        </header>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    </header>
-                <article class="max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/reuniao/400/200" alt="Reunião" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Reunião</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-31T10:00">Há 1 hora, 3 minutos</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Gestão e representação sindical dialogam sobre demandas dos servidores</h3>
-                    <p class="text-gray-700 text-sm">Encontros realizados em agosto abordaram temas relacionados ao PGD, prioridades legais, readaptação e
-                        banco de horas.</p>
-                </article>
 
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/cultura/400/200" alt="Arte e Cultura" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Arte e Cultura</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-27T14:00">Há 4 dias</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Intercâmbio entre museus de brinquedos populares tem programação gratuita em Natal</h3>
-                    <p class="text-gray-700 text-sm">Atividades acontecem nesta sexta-feira (28) e sábado (29), no Centro de Tecnologia e Cultura do IFRN</p>
-                </article>
+                <!-- Evento 5 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9739/">
+
+                    <span class="text-xs font-semibold text-[#58B06B]">
+                        Em andamento
+                    </span>
+
+                    <span>
+                        Pau dos Ferros
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        Oficina "Dando cores ao sol"
+                    </h3>
+
+                    <div class="flex items-end gap-2 mt-2">
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            14
+                        </span>
+
+                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
+                            <span>set</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
+                        </div>
+
+                    </div>
+
+                </a>
 
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/intercampi/400/200" alt="Jogos Intercampi" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Jogos Intercampi Estudantis 2026</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-31T09:00">Há 1 hora, 45 minutos</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Intercampi chega ao fim com definição das últimas medalhas</h3>
-                    <p class="text-gray-700 text-sm">Resultados de sexta-feira e sábado encerraram a fase final estadual</p>
-                </article>
+                <!-- Evento 6 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9764/">
+
+                    <span class="text-xs font-semibold text-[#58B06B]">
+                        Em andamento
+                    </span>
+
+                    <span>
+                        São Gonçalo do Amarante
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        IFJURIS: Introdução ao Direito Constitucional
+                    </h3>
+
+                    <div class="flex items-end gap-2 mt-2">
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            14
+                        </span>
+
+                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
+                            <span>set</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
+                        </div>
+
+                    </div>
+
+                </a>
 
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/alinhamento/400/200" alt="Alinhamento" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Alinhamento</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-27T15:00">Há 4 dias, 1 hora</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Comissão de docentes realiza encontro presencial com capacitação</h3>
-                    <p class="text-gray-700 text-sm">Programação reúne integrantes para discutir o regimento interno e aprofundar conhecimentos sobre
-                        processos relacionados à carreira docente.</p>
-                </article>
+                <!-- Evento 7 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9714/">
+
+                    <span class="text-xs font-semibold text-[#58B06B]">
+                        Em andamento
+                    </span>
+
+                    <span>
+                        Reitoria
+                    </span>
+
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN
+                    </h3>
+
+                    <div class="flex items-end gap-2 mt-2">
+
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            14
+                        </span>
+
+                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
+                            <span>set</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
+                        </div>
+
+                    </div>
+
+                </a>
 
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/campus/400/200" alt="Campus Santa Cruz" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Campus Santa Cruz</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-30T08:00">Há 20 horas</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">IFRN sediou eventos sobre acessibilidade e inclusão na educação</h3>
-                    <p class="text-gray-700 text-sm">Programação ocorreu entre os dias 26 e 28 de agosto, no Campus Santa Cruz</p>
-                </article>
+                <!-- Evento 8 -->
+                <a class="bg-white rounded-2xl border border-[#AAD8B5] p-5 flex flex-col gap-3
+                    hover:shadow-md hover:border-[#58B06B] transition-all duration-200" href="/eventos/9711/">
 
+                    <span class="text-xs font-semibold text-[#58B06B]">
+                        Em andamento
+                    </span>
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/judo/400/200" alt="Judô" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Intercampi 2026</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-27T16:00">Há 4 dias, 16 horas</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Judô estreia e futebol define classificados nos Jogos Intercampi</h3>
-                    <p class="text-gray-700 text-sm">Quinta-feira reúne estreia da modalidade e rodadas que encaminham as semifinais da fase final</p>
-                </article>
+                    <span>
+                        Currais Novos
+                    </span>
 
+                    <h3 class="text-base font-medium text-[#1A1A1A] leading-snug flex-1">
+                        Produção e exposição de Sala Temática: Abelha e Mel.
+                    </h3>
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/evento/400/200" alt="Evento" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Evento</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-28T10:00">Há 3 dias, 22 horas</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">III Encontro de Assessores de Projetos de Ensino reúne representantes dos 22 Campi na Reitoria</h3>
-                    <p class="text-gray-700 text-sm">O evento promoveu formação, troca de experiências e discussões sobre a regulamentação e o acompanhamento
-                        dos Projetos de Ensino no Instituto.</p>
-                </article>
+                    <div class="flex items-end gap-2 mt-2">
 
+                        <span class="text-4xl font-bold text-[#23472B] leading-none">
+                            14
+                        </span>
 
-                <article class="overflow-hidden max-w-sm mx-auto bg-white rounded-lg shadow-mg hover:shadow-xl transition duration-300 p-6 mt-10">
-                    <img class="rounded-2xl object-cover h-48 w-full" src="https://picsum.photos/seed/jee/400/200" alt="JEE 2026" />
-                    <header>
-                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">JEE 2026</span>
-                        <time class=" text-gray-500 text-xs" datetime="2026-08-26T18:00">Há 5 dias, 12 horas</time>
-                    </header>
-                    <h3 class="text-xl font-bold text-green-800 mt-2">Novas modalidades ampliam programação dos Jogos Intercampi nesta quarta-feira</h3>
-                    <p class="text-gray-700 text-sm">Segundo dia da fase final teve provas individuais, disputas coletivas e continuidade das rodadas
-                        classificatórias</p>
-                </article>
+                        <div class="flex flex-col text-xs font-semibold text-[#23472B] uppercase">
+                            <span>set</span>
+                            <span class="text-gray-500 font-normal">
+                                2026
+                            </span>
+                        </div>
+
+                    </div>
+
+                </a>
+
             </div>
->>>>>>> origin/Atividade-8
+
+        </div>
+
     </section>
-=======
-        <!-- Banners (links com imagens) -->
-        <div>
-            <div class="py-4">
-                <ul class="flex flex-wrap justify-center items-center gap-4 px-4">
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="https://memoria.ifrn.edu.br/">
-                            <img class="h-8 w-auto object-contain" alt="Banner - Memoria" height="42" src="/assets/img/icon_memoria_ifrn.original.png"
-                                width="68" />
-                            <span>Memoria</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="https://siabi.ifrn.edu.br/">
-                            <img class="h-8 w-auto object-contain" alt="Banner - Sistema de Bibliotecas" height="92"
-                                src="/assets/img/Banner_-_Sistema_de_Bibliotecas.original.png" width="75" />
-                            <span>Sistema de Bibliotecas do IFRN</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/licitacoes/">
-                            <img class="h-8 w-auto object-contain" alt="Banner - Licitações" height="70" src="/assets/img/licitaC3A7C3B5es.original.png"
-                                width="50" />
-                            <span>Licitações</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="http://portal.ifrn.edu.br/institucional/governanca/ouvidoria/">
-                            <img class="h-8 w-auto object-contain" alt="Banner - Ouvidoria" height="70" src="/assets/img/ouvidoria.original.png"
-                                width="82" />
-                            <span>Ouvidoria</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/processos-eletronicos/">
-                            <img class="h-8 w-auto object-contain" alt="Banner - Processos eletrônicos" height="70"
-                                src="/assets/img/processos_eletronicos.original.png" width="102" />
-                            <span>Processos eletrônicos</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao/">
-                            <img class="h-8 w-auto object-contain" alt="Banner para Serviço de Informação ao Cidadão" height="70"
-                                src="/assets/img/sic.original.png" width="70" />
-                            <span>Serviço de Informação ao Cidadão</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="http://portal.ifrn.edu.br/acesso-a-informacao/transparencia-e-prestacao-de-contas/">
-                            <img class="h-8 w-auto object-contain" alt="Banner para transparência e prestação de contas" height="69"
-                                src="/assets/img/transparencia_e_prestaC3A7C3A3o.original.png" width="57" />
-                            <span>Transparência e prestação de contas</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-2 text-sm">
-                        <a class="flex items-center gap-2 hover:text-green-700 transition-colors duration-200" href="https://falabr.cgu.gov.br/web/home">
-                            <img class="h-8 w-auto object-contain" alt="Banner do Fala.BR" height="225" src="/assets/img/FalaBR.original.png"
-                                width="225" />
-                            <span>Fala.BR</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+
+    <!-- ==================== RODAPÉ ==================== -->
+
+    <footer id="footer">
+
+        <!-- Voltar ao topo -->
+        <div id="go-to-top" class="flex justify-center py-4 bg-green-800 text-white">
+
+            <button type="button" class="hover:text-green-300 transition-colors duration-200 font-medium text-sm">
+
+                Voltar ao topo
+
+            </button>
+
         </div>
 
-        <!-- Informações institucionais (endereço, contato, redes sociais, e-MEC) -->
-        <div class="text-green-900 py-8 px-4">
-            <div>
-                <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8">
-                    <div class="md:w-1/4">
-                        <h2 class="text-xl font-bold leading-tight"
-                            title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
-                            Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</h2>
-                    </div>
-                    <div class="md:w-2/4 text-sm">
-                        <h3 class="font-semibold text-lg">Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</h3>
-                        <dl class="mt-2 space-y-1">
-                            <dt class="sr-only">Endereço:</dt>
-                            <dd>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</dd>
-                            <dt class="sr-only">CEP:</dt>
-                            <dd>59015-300</dd>
-                            <dt class="sr-only">E-mail:</dt>
-                            <dd>comunicacao@ifrn.edu.br</dd>
-                            <dt class="sr-only">Telefone:</dt>
-                            <dd>(84) 4005-0890</dd>
-                        </dl>
-                        <ul class="flex gap-3 mt-4 text-2xl">
-                            <li><a class="hover:text-green-300 transition-colors" href="https://www.instagram.com/ifrnoficial/" title="Instagram"><i
-                                        class="ph ph-instagram-logo"></i><span>Instagram</span></a></li>
-                            <li><a class="hover:text-green-300 transition-colors" href="https://twitter.com/ifrnoficial_" title="Twitter/X"><i
-                                        class="ph ph-twitter-logo"></i><span>Twitter/X</span></a></li>
-                            <li><a class="hover:text-green-300 transition-colors" href="https://br.linkedin.com/school/ifrn/" title="Linkedin"><i
-                                        class="ph ph-linkedin-logo"></i><span>Linkedin</span></a></li>
-                            <li><a class="hover:text-green-300 transition-colors" href="https://www.youtube.com/ifrnoficial" title="Youtube"><i
-                                        class="ph ph-youtube-logo"></i><span>Youtube</span></a></li>
-                            <li><a class="hover:text-green-300 transition-colors" href="https://open.spotify.com/show/2dOEWD8AjVqszkAXWHxWwf?si=jgLOqL1-TwW8QEgQYaWpDA"
-                                    title="Spotify"><i class="ph ph-spotify-logo"></i><span>Spotify</span></a></li>
-                            <li><a class="hover:text-green-300 transition-colors" href="https://www.tiktok.com/@ifrnoficial?_r=1&amp;_t=ZS-97QQhb8X6QC"
-                                    title="TikTok"><i class="ph ph-tiktok-logo"></i><span>TikTok</span></a></li>
+
+        <!-- Mapa do site -->
+        <div id="sitemap" class="bg-green-900 text-white">
+
+            <div class="max-w-7xl mx-auto">
+
+                <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
+
+                    <!-- Processos seletivos -->
+                    <li>
+
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base"
+                            href="/processos-seletivos/buscar/">
+
+                            Processos seletivos
+
+                        </a>
+
+                        <ul class="mt-4">
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=1">
+                                    Bolsas para estudantes
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=2">
+                                    Empreenda no IFRN
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=3">
+                                    Estude no IFRN
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=4">
+                                    Gestão IFRN
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=5">
+                                    Internacionalização
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=6">
+                                    Monitoria e Tutoria
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=9">
+                                    Pesquise no IFRN
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=7">
+                                    Servidores
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/processos-seletivos/buscar/?tipo=8">
+                                    Trabalhe no IFRN
+                                </a>
+                            </li>
+
                         </ul>
-                    </div>
-                    <div class="md:w-1/4 flex flex-col items-center text-center">
-                        <a class="flex flex-col items-center hover:text-green-300 transition-colors"
-                            href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==">
-                            <span>e-MEC</span>
-                            <span>Consulte o cadastro da instituição no Sistema do e-MEC</span>
-                            <img src="/assets/img/e-mec-qr-code.png"
-                                alt="QR-Code para consulta do cadastro da instituição no Sistema do e-MEC" height="95"
-                                width="95" />
+
+                    </li>
+
+
+                    <!-- Cursos -->
+                    <li>
+
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base"
+                            href="/cursos/buscar/">
+
+                            Cursos
+
                         </a>
-                    </div>
-                </div>
+
+                        <ul class="mt-4">
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/cursos/buscar/?categoria=cursos-de-pos-graduacao">
+                                    Cursos de Pós-Graduação
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/cursos/buscar/?categoria=cursos-superiores">
+                                    Cursos Superiores
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/cursos/buscar/?categoria=cursos-tecnicos">
+                                    Cursos Técnicos
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/cursos/buscar/?categoria=outros-cursos">
+                                    Outros Cursos
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Campi -->
+                    <li>
+
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base" href="/campus/">
+
+                            Campi
+
+                        </a>
+
+                        <ul class="mt-4">
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/apodi/">
+                                    Apodi
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/caico/">
+                                    Caicó
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/canguaretama/">
+                                    Canguaretama
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/ceara-mirim/">
+                                    Ceará-Mirim
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/curraisnovos/">
+                                    Currais Novos
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/ipanguacu/">
+                                    Ipanguaçu
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/joaocamara/">
+                                    João Câmara
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/jucurutu/">
+                                    Jucurutu
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/lajes/">
+                                    Lajes
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/macau/">
+                                    Macau
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/mossoro/">
+                                    Mossoró
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/natalcentral/">
+                                    Natal-Central
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/natalcentrohistorico/">
+                                    Natal-Centro Histórico
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/natal-zona-leste/">
+                                    Natal-Zona Leste
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/natalzonanorte/">
+                                    Natal-Zona Norte
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/novacruz/">
+                                    Nova Cruz
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/parelhas/">
+                                    Parelhas
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/parnamirim/">
+                                    Parnamirim
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/paudosferros/">
+                                    Pau dos Ferros
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/santacruz/">
+                                    Santa Cruz
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/saogoncalo/">
+                                    São Gonçalo do Amarante
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/sao-miguel/">
+                                    São Miguel
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/sao-paulo-do-potengi/">
+                                    São Paulo do Potengi
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/touros/">
+                                    Touros
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/umarizal/">
+                                    Umarizal
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/campus/reitoria/">
+                                    Reitoria
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Institucional -->
+                    <li>
+
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base"
+                            href="/institucional/">
+
+                            Institucional
+
+                        </a>
+
+                        <ul class="mt-4">
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/apresentacao/">
+                                    Apresentação
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/institucional/administracao-e-infraestrutura/">
+                                    Administração
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/comissoes-permanentes/">
+                                    Comissões permanentes
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/comunicacao/">
+                                    Comunicação Institucional
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/ensino/">
+                                    Ensino
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/estudantes/">
+                                    Estudantes
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/extensao/">
+                                    Extensão
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/gabinete/">
+                                    Gabinete
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/gestao-estrategica/">
+                                    Gestão Estratégica
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/governanca/">
+                                    Governança
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/institucional/pesquisa-pos-graduacao-e-inovacao/">
+                                    Pesquisa, Pós-graduação e Inovação
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/servidores/">
+                                    Servidores
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/tecnologia-da-informacao/">
+                                    Tecnologia da Informação
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/internacionalizacao/">
+                                    Internacionalização
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/institucional/infraestrutura/">
+                                    Infraestrutura
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/institucional/polo-de-inovacao-currais-novos/">
+                                    Polo de Inovação Currais Novos
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Acesso à Informação -->
+                    <li>
+
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base"
+                            href="/acesso-a-informacao/">
+
+                            Acesso à Informação
+
+                        </a>
+
+                        <ul class="mt-4">
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/acesso-a-informacao/institucional/">
+                                    Institucional
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/acesso-a-informacao/acoes-e-programas/">
+                                    Ações e Programas
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/participacao-social/">
+                                    Participação social
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/acesso-a-informacao/auditorias/">
+                                    Auditorias
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/convenios-e-transferencias/">
+                                    Convênios e Transferências
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/receitas-e-despesas/">
+                                    Receitas e Despesas
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/licitacoes-e-contratos/">
+                                    Licitações e Contratos
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm" href="/acesso-a-informacao/servidores/">
+                                    Servidores
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/informacoes-classificadas/">
+                                    Informações classificadas
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/servico-de-informacao-ao-cidadao/">
+                                    Serviço de Informação ao Cidadão
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/perguntas-frequentes/">
+                                    Perguntas Frequentes
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/portal-de-dados-abertos/">
+                                    Dados Abertos
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/sancoes-administrativas/">
+                                    Sanções administrativas
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/">
+                                    Ferramentas e aspectos tecnológicos
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/boletins-de-servicos/">
+                                    Boletins de Serviços
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/protecao-de-dados-pessoais/">
+                                    Proteção de dados pessoais
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/estatutos-e-regimentos/">
+                                    Documentos Institucionais
+                                </a>
+                            </li>
+
+                            <li class="mb-4">
+                                <a class="hover:text-green-300 text-sm"
+                                    href="/acesso-a-informacao/transparencia-e-prestacao-de-contas/">
+                                    Transparência e Prestação de Contas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Eventos -->
+                    <li>
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base" href="/eventos/">
+                            Eventos
+                        </a>
+                    </li>
+
+
+                    <!-- Serviços -->
+                    <li>
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base" href="/servicos/">
+                            Serviços
+                        </a>
+                    </li>
+
+
+                    <!-- Acessibilidade -->
+                    <li>
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base"
+                            href="/acessibilidade">
+                            Acessibilidade
+                        </a>
+                    </li>
+
+
+                    <!-- Créditos -->
+                    <li>
+                        <a class="hover:text-green-300 transition-colors font-semibold text-base" href="/creditos">
+                            Créditos
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
+
         </div>
 
-        <!-- Copyright 
-        --- aproveite
-        Esater egg -> https://github.com/cesimarxavier/ifrn-design-web/blob/main/design-web/easter-egg/resolucao-tarefa9.md
-        
-        -->
+
+        <!-- Banners -->
+        <div class="bg-white">
+
+            <div class="max-w-7xl mx-auto py-6">
+
+                <ul class="flex flex-wrap justify-center items-center gap-6 px-4">
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="https://memoria.ifrn.edu.br/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner - Memoria"
+                                src="/assets/img/icon_memoria_ifrn.original.png">
+
+                            <span>Memoria</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="https://siabi.ifrn.edu.br/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner - Sistema de Bibliotecas"
+                                src="/assets/img/Banner_-_Sistema_de_Bibliotecas.original.png">
+
+                            <span>Sistema de Bibliotecas do IFRN</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="http://portal.ifrn.edu.br/acesso-a-informacao/licitacoes/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner - Licitações"
+                                src="/assets/img/licitaC3A7C3B5es.original.png">
+
+                            <span>Licitações</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="http://portal.ifrn.edu.br/institucional/governanca/ouvidoria/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner - Ouvidoria"
+                                src="/assets/img/ouvidoria.original.png">
+
+                            <span>Ouvidoria</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="http://portal.ifrn.edu.br/acesso-a-informacao/processos-eletronicos/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner - Processos eletrônicos"
+                                src="/assets/img/processos_eletronicos.original.png">
+
+                            <span>Processos eletrônicos</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="http://portal.ifrn.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner para Serviço de Informação ao Cidadão"
+                                src="/assets/img/sic.original.png">
+
+                            <span>Serviço de Informação ao Cidadão</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="http://portal.ifrn.edu.br/acesso-a-informacao/transparencia-e-prestacao-de-contas/">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner para transparência e prestação de contas"
+                                src="/assets/img/transparencia_e_prestaC3A7C3A3o.original.png">
+
+                            <span>Transparência e prestação de contas</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-2 text-sm hover:text-green-700 transition"
+                            href="https://falabr.cgu.gov.br/web/home">
+
+                            <img class="h-8 w-auto object-contain" alt="Banner do Fala.BR"
+                                src="/assets/img/FalaBR.original.png">
+
+                            <span>Fala.BR</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Informações institucionais -->
+        <div class="text-green-900 py-8 px-4 bg-gray-50">
+
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8">
+
+                <div class="md:w-1/4">
+
+                    <h2 class="text-xl font-bold leading-tight"
+                        title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
+
+                        Instituto Federal de Educação, Ciência e Tecnologia
+                        do Estado do Rio Grande do Norte
+
+                    </h2>
+
+                </div>
+
+
+                <div class="md:w-2/4 text-sm">
+
+                    <h3 class="font-semibold text-lg">
+                        Instituto Federal de Educação, Ciência e Tecnologia
+                        do Estado do Rio Grande do Norte
+                    </h3>
+
+                    <dl class="mt-2 space-y-1">
+
+                        <dt class="sr-only">Endereço:</dt>
+                        <dd>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</dd>
+
+                        <dt class="sr-only">CEP:</dt>
+                        <dd>59015-300</dd>
+
+                        <dt class="sr-only">E-mail:</dt>
+                        <dd>comunicacao@ifrn.edu.br</dd>
+
+                        <dt class="sr-only">Telefone:</dt>
+                        <dd>(84) 4005-0890</dd>
+
+                    </dl>
+
+
+                    <!-- Redes sociais -->
+                    <ul class="flex flex-wrap gap-3 mt-4 text-2xl">
+
+                        <li>
+                            <a class="hover:text-green-700 transition" href="https://www.instagram.com/ifrnoficial/"
+                                title="Instagram">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="hover:text-green-700 transition" href="https://twitter.com/ifrnoficial_"
+                                title="Twitter/X">
+                                <i class="ph ph-twitter-logo"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="hover:text-green-700 transition" href="https://br.linkedin.com/school/ifrn/"
+                                title="LinkedIn">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="hover:text-green-700 transition" href="https://www.youtube.com/ifrnoficial"
+                                title="YouTube">
+                                <i class="ph ph-youtube-logo"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="hover:text-green-700 transition"
+                                href="https://open.spotify.com/show/2dOEWD8AjVqszkAXWHxWwf" title="Spotify">
+                                <i class="ph ph-spotify-logo"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="hover:text-green-700 transition" href="https://www.tiktok.com/@ifrnoficial"
+                                title="TikTok">
+                                <i class="ph ph-tiktok-logo"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- e-MEC -->
+                <div class="md:w-1/4 flex flex-col items-center text-center">
+
+                    <a class="flex flex-col items-center hover:text-green-700 transition"
+                        href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==">
+
+                        <span>e-MEC</span>
+
+                        <span>
+                            Consulte o cadastro da instituição
+                            no Sistema do e-MEC
+                        </span>
+
+                        <img src="/assets/img/e-mec-qr-code.png"
+                            alt="QR-Code para consulta do cadastro da instituição no Sistema do e-MEC" height="95"
+                            width="95">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
         <div class="bg-green-950 text-center text-sm text-gray-400 py-4 border-t border-green-800">
-            <p>Copyright © 2026 | Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte
+
+            <p>
+                Copyright © 2026 | Instituto Federal de Educação,
+                Ciência e Tecnologia do Estado do Rio Grande do Norte
             </p>
+
         </div>
 
     </footer>
->>>>>>> origin/Atividade-9
 
 </body>
+
 </html>
