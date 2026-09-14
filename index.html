@@ -9,116 +9,73 @@
     <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
 </head>
 
-<body>
+<body class="bg-gray-100 min-h-screen flex items-center justify-between">
 
-    <!-- ===========  Eventos  ================= -->
-    <section>
+    <header class="max-w-7xl mx-auto px-6 flex-wrap flex-grow">
         <div>
             <!-- Cabeçalho da seção -->
             <div>
-                <h2>Eventos</h2>
-                <a href="/eventos/">
-                    Todos os eventos
-                    <span aria-hidden="true"></span>
-                </a>
-                <div>
-                    <p>Conheça todos os eventos - atividades, festivais, congressos, palestras e outros - que englobam
-                        os <i>campi</i> do IFRN em diferentes escalas de alcance social.</p>
-                </div>
+                <h1 class="text-2xl font-bold text-green-900 no-underline">
+                    <a href=""
+                        title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
+                        INSTITUTO FEDERAL
+                    </a>
+                </h1>
+                <p class="hidden md:block slogan">
+                    Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+                </p>
             </div>
-
-            <!-- Grade de cards de eventos -->
+                
+                <!-- NAVEGAÇÃO PRINCIPAL (desktop) -->
+                <nav class="hidden md:flex flex-wrap items-center gap-3 hover:text-green-500" aria-label="Navegação principal">
+                    <a href="https://portal.ifrn.edu.br/processos-seletivos/buscar/">Processos seletivos</a>
+                    <a href="https://portal.ifrn.edu.br/cursos/buscar/">Cursos</a>
+                    <a href="https://portal.ifrn.edu.br/campus/">Campi</a>
+                    <a href="https://portal.ifrn.edu.br/institucional/">Institucional</a>
+                    <a href="https://portal.ifrn.edu.br/acesso-a-informacao/">Acesso à Informação</a>
+                    <a href="https://portal.ifrn.edu.br/eventos/">Eventos</a>
+                    <a href="https://portal.ifrn.edu.br/servicos/">Serviços</a>
+                </nav>
+            </div>
+            <!-- MENU HAMBÚRGUER (mobile) -->
+            <button class="text-rose-600 md:hidden" id="menuToggle" aria-label="Menu">
+                <i class="ph ph-list">menuToggle</i>
+            </button>
+                
+                
+            
+            <!-- AÇÕES (ícones, busca, contraste, modo escuro) -->
             <div>
-
-                <a href="/eventos/9486/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Vivências em Arte</h3>
-                    <div>
-                        <span>07</span>
-                        <span>dez</span>
-                        <span>2026</span>
+                <!-- Ícones sociais -->
+                <ul class=" items-center gap-3">
+                    <div class="text-green-500">
+                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                        <a href="#" aria-label="Spotify"><i class="ph ph-spotify-logo"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
                     </div>
-                </a>
+                    
+                <!-- Busca -->
+                <form method="get" action="/search/">
+                    <input class="border rounded-full px-3 py-1 bg-gray-100 focus:outline-none focus:ring" type="search" name="query" placeholder="Busca" aria-label="Busca" />
+                    <button type="submit" aria-label="Pesquisar">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </form>
 
-                <a href="/eventos/9595/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Caicó</span>
-                    <h3>III Feira Seridó Ciência</h3>
-                    <div>
-                        <span>25</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
+                <!-- Alto contraste -->
+                <button id="altocontraste" type="button" aria-label="Alto contraste">
+                    <i class="ph ph-contrast"><img src="assets/img/circle-half.svg" alt=""></i>
+                </button>
 
-                <a href="/eventos/9783/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> João Câmara</span>
-                    <h3>CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9333/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>III Encontro Anual da Comissão Própria de Avaliação</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9739/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Oficina "Dando cores ao sol"</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9764/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> São Gonçalo do Amarante</span>
-                    <h3>IFJURIS: Introdução ao Direito Constitucional</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9714/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9711/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Currais Novos</span>
-                    <h3>Produção e exposição de Sala Temática: Abelha e Mel.</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
+                <!-- Modo escuro -->
+                <button type="button" aria-label="Modo escuro">
+                    <i class="ph ph-moon"><img src="assets/img/moon.svg" alt=""></i>
+                </button>
             </div>
+            </ul>
         </div>
     </section>
 
