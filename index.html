@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- Tema padrão: garden. O tema forest é ativado pelo toggle (theme-controller). -->
+<html lang="pt-BR" data-theme="garden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kleiwan Ludugero | Estudante de Informática para Internet</title>
+  <meta name="description" content="Página pessoal de Kleiwan Ludugero, estudante de Informática para Internet (InfoWeb) no IFRN." />
+
+  <!-- DaisyUI (componentes) + Tailwind (utilitários) via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-base-100 text-base-content">
+
+  <!-- ========== SEÇÃO 1: CABEÇALHO (navbar + hero) ========== -->
+  <header>
+    <div class="navbar bg-base-200 sticky top-0 z-10 shadow-sm px-4">
+      <div class="navbar-start">
+        <a href="#topo" class="btn btn-ghost text-lg">Kleiwan</a>
+      </div>
+
+      <nav class="navbar-center hidden md:flex" aria-label="Seções da página">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#apresentacao">Apresentação</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-end gap-3">
+        <!-- Alternância de tema sem JavaScript: theme-controller -->
+        <label class="flex items-center gap-2 cursor-pointer" title="Alternar tema claro (garden) / escuro (forest)">
+          <span class="text-sm" aria-hidden="true">☀️</span>
+          <input type="checkbox" value="forest" class="toggle theme-controller" aria-label="Alternar tema entre garden e forest" />
+          <span class="text-sm" aria-hidden="true">🌙</span>
+        </label>
+        <a href="#contato" class="btn btn-primary btn-sm md:btn-md">Fale comigo</a>
+      </div>
+    </div>
+
+    <div id="topo" class="hero min-h-[70vh] bg-base-100">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <div class="avatar placeholder mb-6">
+            <div class="bg-primary text-primary-content w-24 rounded-full">
+              <span class="text-3xl font-bold">KL</span>
+            </div>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold">Kleiwan Paulo Justino Pinheiro Ludugero</h1>
+          <p class="py-6 text-lg">
+            Estudante de Informática para Internet. Aprendendo a construir páginas web
+            com HTML, CSS e Tailwind, e cultivando um jardim entre um commit e outro.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="https://github.com/Kleiwan" target="_blank" rel="noopener" class="btn btn-outline btn-secondary">Meu GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4">
+
+    <!-- ========== SEÇÃO 2: APRESENTAÇÃO ========== -->
+    <section id="apresentacao" class="py-16 scroll-mt-16">
+      <h2 class="text-3xl font-bold mb-6">Sobre mim</h2>
+      <div class="max-w-prose space-y-4 text-lg">
+        <p>
+          Sou jovem, católico e verdadeiro. Estudo Informática para Internet (InfoWeb)
+          e gosto de transformar ideias em páginas que funcionam em qualquer tela.
+        </p>
+        <p>
+          Fora do código, gosto de pássaros, de jardinagem e de video games.
+          Também uso ferramentas de IA generativa para estudar e testar ideias,
+          sempre revisando o que ela produz.
+        </p>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-10 mb-3">Habilidades</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-primary badge-lg">HTML</span>
+        <span class="badge badge-primary badge-lg">CSS</span>
+        <span class="badge badge-primary badge-lg">Tailwind</span>
+        <span class="badge badge-secondary badge-lg">Python</span>
+        <span class="badge badge-secondary badge-lg">Git</span>
+        <span class="badge badge-accent badge-lg">IA generativa</span>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-8 mb-3">Interesses</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-outline badge-lg">Pássaros</span>
+        <span class="badge badge-outline badge-lg">Jardinagem</span>
+        <span class="badge badge-outline badge-lg">Video games</span>
+        <span class="badge badge-outline badge-lg">Fé católica</span>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 3: PROJETOS ========== -->
+    <section id="projetos" class="py-16 scroll-mt-16">
+      <h2 class="text-3xl font-bold mb-2">Projetos</h2>
+      <p class="mb-8 max-w-prose">Trabalhos que fiz durante o curso, cada um com um foco diferente.</p>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <article class="card bg-base-200 shadow-md h-full">
+          <div class="card-body">
+            <h3 class="card-title">
+              Página pessoal com DaisyUI
+              <div class="badge badge-secondary">Novo</div>
+            </h3>
+            <p>Esta própria página: navbar, hero, cards, badges e formulário montados com componentes DaisyUI.</p>
+            <div class="card-actions justify-end mt-auto pt-4">
+              <div class="badge badge-outline">DaisyUI</div>
+              <div class="badge badge-outline">Tailwind</div>
+              <a href="https://github.com/Kleiwan" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-md h-full">
+          <div class="card-body">
+            <h3 class="card-title">Exercícios de Git e GitHub</h3>
+            <p>Repositório com as atividades da turma: branches, commits descritivos, forks e publicação.</p>
+            <div class="card-actions justify-end mt-auto pt-4">
+              <div class="badge badge-outline">Git</div>
+              <div class="badge badge-outline">GitHub</div>
+              <a href="https://github.com/Kleiwan" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ver repositório</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-md h-full">
+          <div class="card-body">
+            <h3 class="card-title">Catálogo de pássaros</h3>
+            <p>Página com fotos e informações sobre aves que gosto de observar, feita com HTML e CSS.</p>
+            <div class="card-actions justify-end mt-auto pt-4">
+              <div class="badge badge-outline">HTML</div>
+              <div class="badge badge-outline">CSS</div>
+              <a href="https://github.com/Kleiwan" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 4: CONTATO ========== -->
+    <section id="contato" class="py-16 scroll-mt-16">
+      <h2 class="text-3xl font-bold mb-6">Contato</h2>
+
+      <div class="grid gap-8 lg:grid-cols-2">
+
+        <div class="space-y-4">
+          <div role="alert" class="alert alert-info">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+              <h3 class="font-bold">Prefere escrever direto?</h3>
+              <div class="text-sm">E-mail: kleiwanp11@gmail.com</div>
+              <div class="text-sm">GitHub: github.com/Kleiwan</div>
+            </div>
+          </div>
+          <p class="max-w-prose">
+            Respondo mensagens sobre projetos, estudos e trocas de ideia sobre
+            programação, plantas e pássaros.
+          </p>
+        </div>
+
+        <!-- Formulário sem JavaScript: abre o app de e-mail do visitante -->
+        <form action="mailto:kleiwanp11@gmail.com" method="post" enctype="text/plain" class="card bg-base-200 shadow-md">
+          <div class="card-body">
+            <h3 class="card-title">Envie uma mensagem</h3>
+
+            <label class="form-control w-full">
+              <div class="label"><span class="label-text">Seu nome</span></div>
+              <input type="text" name="nome" placeholder="Como você se chama?" class="input input-bordered w-full" required />
+            </label>
+
+            <label class="form-control w-full">
+              <div class="label"><span class="label-text">Seu e-mail</span></div>
+              <input type="email" name="email" placeholder="voce@exemplo.com" class="input input-bordered w-full" required />
+            </label>
+
+            <label class="form-control w-full">
+              <div class="label"><span class="label-text">Mensagem</span></div>
+              <textarea name="mensagem" class="textarea textarea-bordered h-28" placeholder="Escreva aqui..." required></textarea>
+            </label>
+
+            <div class="card-actions justify-end pt-2">
+              <button type="reset" class="btn btn-ghost">Limpar</button>
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-center p-6 bg-base-200 text-base-content">
+    <aside>
+      <p>Kleiwan Ludugero · InfoWeb · IFRN · Design Web, Tarefa 33</p>
+    </aside>
+  </footer>
+
+</body>
+</html>
